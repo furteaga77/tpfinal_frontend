@@ -1,5 +1,6 @@
 import './ProductsList.css'
 import Producto from './Product'
+import { Container, ListGroup } from 'react-bootstrap'
 
 function ProductsList(){
     class producto{
@@ -22,11 +23,11 @@ function ProductsList(){
     console.table('Productos', productos)
     console.table('listproductos', listproductos)
     
-    return(<div className='content'>
-                <ul>
+    return(<Container>
+                <ListGroup>
                     {listproductos}
-                </ul>
-            </div>
+                </ListGroup>
+            </Container>
                 )
 }
 export default ProductsList

@@ -1,23 +1,29 @@
+import { Container } from 'react-bootstrap'
+import { Table } from 'react-bootstrap'
 import './Footer.css'
 
 function Footer(){
     return(
-        <div className='Footer-content'>
+        <Container>
             <span>Creado por </span>
-            <table>
+            <Table striped bordered hover size="sm">
+            <thead>
                 <tr>
-                    <td><span>NOMBRE</span></td>
-                    <td><span>APELLIDO</span></td>
-                    <td> <span>DNI</span></td>
+                <th>NOMBRE</th>
+                <th>APELLIDO</th>
+                <th>DNI</th>
                 </tr>
+            </thead>
+            <tbody>
                 <tr>
-                    <td><span>Facundo</span></td>
-                    <td><span>Urteaga</span></td>
-                    <td><span>26047202</span></td>
+                <td>Facundo</td>
+                <td>Urteaga</td>
+                <td>26047202</td>
                 </tr>
-            </table>
+            </tbody>
+            </Table>
             <span>&copy; 2021. Todos los derechos reservados</span>
-        </div>
+        </Container>
     )
 }
 
