@@ -19,9 +19,6 @@ function ProductsList(){
     const listproductos = productos.map(element =>{
         return(Producto(element.id,element.imageURL))
     })
-
-    console.table('Productos', productos)
-    console.table('listproductos', listproductos)
     
     return(<Container>
                 <ListGroup>
