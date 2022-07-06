@@ -1,5 +1,7 @@
-import { Container, Nav, Navbar } from 'react-bootstrap'
 import './NavBar.css'
+import  {Container, Nav, Navbar } from 'react-bootstrap'
+import { Link } from 'react-router-dom';
+
 
 function NavBar(){
     return(
@@ -15,10 +17,14 @@ function NavBar(){
             />{' '}
           Mi Supermercado
           </Navbar.Brand>
-          <Nav.Link href="#Home">Home</Nav.Link>
+          {/* <Nav.Link href="#Home">Home</Nav.Link>
           <Nav.Link href="#Ofertas">Ofertas</Nav.Link>
           <Nav.Link href="#Almacen">Almacén</Nav.Link>
-          <Nav.Link href="#Bebidas">Bebidas</Nav.Link>
+          <Nav.Link href="#Bebidas">Bebidas</Nav.Link> */}
+          <Link style={{textDecoration: 'none', marginRight:'10Rem' }} to="/categories/Ofertas">Ofertas</Link>
+          <Link style={{textDecoration: 'none', marginRight:'10Rem' }} to="/categories/catId:2">Almacén</Link>
+          <Link style={{textDecoration: 'none', marginRight:'10Rem' }} to="/categories/catId:3">Bebidas</Link>
+          <Link style={{textDecoration: 'none', marginRight:'10Rem' }} to="/">HOME</Link>          
         </Container>
       </Navbar>
     )
