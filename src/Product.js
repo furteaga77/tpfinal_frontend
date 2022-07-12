@@ -1,9 +1,14 @@
-import { ListGroup } from 'react-bootstrap';
-import './Product.css'    
+import './Product.css'
+import { useParams } from "react-router-dom";
+import { getProducto } from "./data"
 
-function Producto(id,imageURL){
+function Producto(){
+    let params = useParams();
+    let producto = getProducto(parseInt(params.productoId, 10));
     return(
-        <ListGroup.Item>Producto:{id} foto:<img id='img{id}' src={imageURL} alt=''></img> </ListGroup.Item>
+        <main>
+            <p>Producto:{producto.id} foto:<img id={'img'+ producto.id} src={producto.imageURL} alt=''></img> </p>
+        </main>
     );
 }
 export default Producto
