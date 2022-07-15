@@ -4,8 +4,8 @@ import { getProductos } from "./data";
 import { NavLink, useParams } from 'react-router-dom';
 
 function ProductsList(){
-    let productos = getProductos();
     let params = useParams();
+    let productos = getProductos(parseInt(params.catId, 10));    
     return(
         <Row>
                 {productos
