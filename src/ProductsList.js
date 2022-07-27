@@ -1,18 +1,20 @@
 import './ProductsList.css'
-import { Row } from 'react-bootstrap'
+import { CardGroup, Card } from 'react-bootstrap'
 import { getProductos } from "./data";
-import { NavLink, useParams } from 'react-router-dom';
+// import { NavLink, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 function ProductsList(){
     let params = useParams();
     let productos = getProductos(parseInt(params.catId, 10));    
     return(
-        <Row>
-                {productos
-                    .map((element) => {
-                        return(<NavLink to={`/categories/${params.catId}/${element.id}`}><p>Producto:{element.id} foto:<img id={'img'+ element.id} src={element.imageURL} alt=''></img> </p></NavLink>)
-                })}
-        </Row>
+        <CardGroup>
+            {productos
+                .map((element) => (
+                        // <NavLink to={`/categories/${params.catId}/${element.id}`}><Card>Producto:{element.id} foto:<Card.Img variant="top" src={element.imageURL} /> </Card></NavLink>
+                        <Card style={{ width: "100px", height: "180px" }}>Producto:{element.id} foto:<Card.Img variant="top" src={element.imageURL} /> </Card>
+                    ))}
+        </CardGroup>
         )
     }
 export default ProductsList

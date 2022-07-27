@@ -13,14 +13,12 @@ function App() {
     <Container>
       <BrowserRouter>
         <NavBar></NavBar>
-        <Container>
-          <Routes>
-            <Route path='/' element={<Banner></Banner>}/>
-            <Route path='/categories/:catId' element={<ProductsList></ProductsList>}/>
-            <Route path='/categories/:catId/:productoId' element={<Producto></Producto>}/>
-            <Route path='*' element={<h1>Page not found</h1>}/>
-          </Routes>
-        </Container>
+        <Routes>
+          <Route path='/' element={<Banner></Banner>}/>
+          <Route path='/categories/:catId' element={<ProductsList></ProductsList>}/>
+          <Route path='/categories/:catId/:productoId' element={<Producto></Producto>}/>
+          <Route path='*' element={<h1>Page not found</h1>}/>
+        </Routes>
         <Footer></Footer>
       </BrowserRouter>
     </Container>
