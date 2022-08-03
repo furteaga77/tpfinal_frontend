@@ -7,7 +7,8 @@ function Producto(){
     let producto = getProducto(parseInt(params.catId, 10),parseInt(params.productoId, 10));
     return(
         <main>
-            <p>Producto:{producto.id} foto:<img id={'img'+ producto.id} src={producto.imageURL} alt=''></img> </p>
+            <h1>Producto{producto.id} foto: </h1>
+            <img id={'img'+ producto.id} src={producto.imageURL} alt=''></img>
         </main>
     );
 }

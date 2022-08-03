@@ -11,8 +11,6 @@ const Banner = () => {
                         alt="First slide"
                     />
                 </Carousel.Item>
-                {/* <Carousel.Caption>
-                </Carousel.Caption>                 */}
                 <Carousel.Item>
                     <img
                         className="d-block w-100 carousel"
@@ -20,8 +18,6 @@ const Banner = () => {
                         alt="Second slide"
                     />                    
                 </Carousel.Item>
-                {/* <Carousel.Caption>
-                </Carousel.Caption>                 */}
                 <Carousel.Item>
                     <img
                         className="d-block w-100 carousel"
@@ -29,8 +25,6 @@ const Banner = () => {
                         alt="Third slide"
                     />                      
                 </Carousel.Item>
-                {/* <Carousel.Caption>
-                </Carousel.Caption>                 */}
                 <Carousel.Item>
                     <img
                         className="d-block w-100 carousel"
@@ -38,8 +32,6 @@ const Banner = () => {
                         alt="Fourth slide"
                     />                                          
                 </Carousel.Item>   
-                {/* <Carousel.Caption>
-                </Carousel.Caption>              */}
             </Carousel>
     );
 };
