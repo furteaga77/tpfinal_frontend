@@ -9,7 +9,7 @@ function ProductsList(){
     return(
         <Row xs={1} md={2} className="g-4">
             {productos.map((element) => (
-                        <Col key={element.id}><NavLink to={`/categories/${params.catId}/${element.id}`}><Card><Card.Img variant="top" src={element.imageURL} /><Card.Body><Card.Title>Producto:{element.id}</Card.Title><Card.Text>Precio Contado $XXX</Card.Text></Card.Body> </Card></NavLink></Col>
+                        <Col key={element.id}><NavLink to={`/categories/${params.catId}/${element.id}`}><Card><Card.Img variant="top" src={element.imageURL} /><Card.Body><Card.Title>Producto: {element.name}</Card.Title><Card.Text>Precio Contado ${element.price}</Card.Text></Card.Body> </Card></NavLink></Col>
                     ))}
         </Row>
         )

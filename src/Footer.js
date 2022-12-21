@@ -22,7 +22,7 @@ function Footer(){
                 </tr>
             </tbody>
             </Table>
-            <span>&copy; 2021. Todos los derechos reservados</span>
+            <span>&copy; 2022. Todos los derechos reservados</span>
         </Container>
     )
 }

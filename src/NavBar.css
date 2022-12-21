@@ -1,0 +1,8 @@
+.imgNavbar{
+    margin-left: 10px;
+    margin-bottom: 5px;
+    max-width: 500%;
+    max-height: 500%;
+    border-radius: 50%;
+    box-shadow: 5px 6px 15px -5px rgba(0, 0, 0, 0.75); 
+   }
